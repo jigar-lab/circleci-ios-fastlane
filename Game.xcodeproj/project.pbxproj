@@ -202,9 +202,8 @@
 				TargetAttributes = {
 					49EC45451BF4D532000A8470 = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = D6G5P5FAJG;
 						LastSwiftMigration = 0900;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					49EC455D1BF4D533000A8470 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -447,8 +446,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D6G5P5FAJG;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

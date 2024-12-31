@@ -1,4 +1,4 @@
-git_url("https://github.com/jigar-lab/ios-codesigning-cert")
+git_url("git@github.com:jigar-lab/ios-codesigning-cert.git")
 
 storage_mode("git")
 
