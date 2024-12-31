@@ -21,7 +21,7 @@ jobs:
 
   adhoc:
     macos:
-      xcode: "10.2.0"
+      xcode: "16.2."
     working_directory: /Users/distiller/project
     environment:
       FL_OUTPUT_DIR: output
@@ -38,7 +38,7 @@ jobs:
 
   beta:
     macos:
-      xcode: "10.2.0"
+      xcode: "16.2"
     working_directory: /Users/distiller/project
     environment:
       FL_OUTPUT_DIR: output
@@ -58,10 +58,5 @@ workflows:
   build-test-adhoc:
     jobs:
       - build-and-test
-      - adhoc:
-      - beta:
-          #filters:
-            #branches:
-              #only: master
-          #requires:
-            #- build-and-test
+      - adhoc
+      - beta
