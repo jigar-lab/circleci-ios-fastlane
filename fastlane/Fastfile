@@ -1,9 +1,6 @@
 default_platform :ios
 
 platform :ios do
-  before_all do
-    setup_circle_ci
-  end
 
   desc "Runs all the tests"
   lane :test do
@@ -26,7 +23,7 @@ platform :ios do
 
   desc "Deploy a new version to the App Store"
   lane :release do
-    # match(type: "appstore")
+    match(type: "appstore")
     # snapshot
     gym # Build your app - more options available
     deliver(force: true)

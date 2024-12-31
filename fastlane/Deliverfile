@@ -1,0 +1,34 @@
+# The Deliverfile allows you to store various App Store Connect metadata
+# For more information, check out the docs: https://docs.fastlane.tools/actions/deliver/
+
+# App-specific information
+app_identifier "com.codebuild.ios-codesigning"
+username "codebuild-mac@amazon.com"
+
+# Choose the submission type
+# submission_type "app_store" # Can be: app_store, test_flight, or both
+
+# App Store metadata
+name({
+  'en-US' => "CodeBuild Game"
+})
+
+description({
+  'en-US' => "Your app description in English"
+})
+
+release_notes({
+  'en-US' => "What's new in this version"
+})
+
+
+# App Review Information
+app_review_information(
+  first_name: "Jigar",
+  last_name: "Bhatt",
+  phone_number: "+1 206 489 9501",
+  email_address: "codebuild-mac@amazon.com",
+  demo_user: "demouser",
+  demo_password: "demopass",
+  notes: "Any special instructions for the reviewer"
+)
